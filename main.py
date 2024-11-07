@@ -1,16 +1,21 @@
-# This is a sample Python script.
+def convert_miles_to_km(miles):
+    value_in_km = miles * 0.621371
+    print(f"{miles} miles = {value_in_km} km")
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def menu():
+    print("Welcome to the Converter")
+    print("1. Convert miles to kilometers")
+    print("2. Exit")
+    option = input("What do you want to do ?")
+
+    while True:
+        if option == '1':
+            miles = input("Enter your value in miles :")
+            convert_miles_to_km(int(miles))
+        elif option == '2':
+            print("Goodbye :)")
+            break
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+menu()
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
